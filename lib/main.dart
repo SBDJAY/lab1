@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage>{
 
   void _timer() {
     Timer(const Duration(seconds: 5), handleTimeout);
+    Timer.run(() => _incrementCounter());
   }
 
   void handleTimeout() {  
